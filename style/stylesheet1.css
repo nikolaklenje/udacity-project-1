@@ -1,0 +1,157 @@
+body{
+    background-color:pink;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+button{
+    float:left;
+    font-size: 16px;
+    border:none;
+    color:whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    background-color: violet;
+    text-decoration: none;
+}
+.container{
+    display:grid;
+    margin:auto;
+    grid-template-rows: auto max-content auto;
+    grid-template-areas:
+    "hd"
+    "main"
+    "ft";
+    grid-gap:2px;
+    border: 2px solid pink;
+    width: 99%;
+    overflow-x: hidden;
+    height:100%;
+    resize: both;
+}
+.header{
+    grid-area:hd; 
+    display:inline;
+    background-image: url('file:///Users/nikolastankovic/Desktop/Blog_website/static/image1.jpeg');
+    background-size:cover;
+}
+.content{
+    grid-area:main;
+    grid-auto-columns: min-content;
+    grid-auto-rows: max-content;
+    display:flex;
+    flex-direction:row;
+    grid-gap:30px;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    overflow:hidden
+}
+.bio{
+    display:flex;
+    flex-direction: column;
+    grid-gap:4px;
+    background-color: aliceblue;
+    width: 35%;
+    height:fit-content;
+    overflow:visible;
+}
+.blog{
+    text-align: left;
+    right: 20px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: large;
+    width: 100%;
+    overflow: visible;
+    padding:10%;
+    height: 100%;
+}
+.footer{
+    grid-area:ft;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    background-color:aqua;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:200%;
+
+}
+.fa{
+    width: 60px;
+    text-align: center;
+    
+}
+.fa-facebook{
+color: white;
+background-color: blue;
+width: 30px;
+height: 30px;
+font-size: medium;
+padding-top: 10px;
+border-radius: 99%;
+
+}
+.fa-twitter{
+    color: blue;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    font-size: medium;
+    padding-top: 10px;
+    border-radius: 99%;
+}
+.fa-linkedin{
+    color: white;
+    background-color:cornflowerblue;
+    width: 30px;
+    height: 30px;
+    font-size: medium;
+    padding-top: 10px;
+    border-radius: 99%;
+
+}
+#avatar{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+}
+@media only screen and (max-width:600px){
+body{
+    background-color:purple;
+    display:flex;
+    flex-direction: column;
+    
+    
+}
+    .content{
+        grid-area:main;
+        display:flex;
+        flex-direction:column;
+        grid-gap:10px;
+        padding-right: 10px;
+        width: 80%;
+
+    }
+
+
+.blog{
+    text-align: left;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: large;
+    width:95%;
+    resize: both;
+}
+.bio{
+    display:flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: 90%;
+    border-bottom-right-radius: 10%;
+    padding:10% ;
+    
+}
+}

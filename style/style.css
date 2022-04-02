@@ -1,0 +1,30 @@
+@import url("styleclass.css");
+@import url("styleimg.css");
+@import url("styleid.css");
+
+body{
+    background-color:pink;
+
+}
+button{
+    float:left;
+    font-size: 16px;
+    border:none;
+    color:whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    background-color: violet;
+    text-decoration: none;
+}
+.navbar{
+    overflow: hidden;
+    
+}
+p{
+    font-size: large;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+input{
+    height: 20px;
+}

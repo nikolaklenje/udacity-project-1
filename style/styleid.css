@@ -1,0 +1,50 @@
+#main{
+    display: flex;
+    flex-direction: row;
+}
+@media only screen and (max-width:600px) {
+    body{
+        background-color:purple;
+        
+        height: auto;
+    }
+   #main{
+       display: flex;
+       flex-direction: column;
+   }
+   
+    .content{
+        grid-area:main;
+        display: flex;
+        flex-direction: column;
+        overflow:hidden;
+        background-image: url('file:///Users/nikolastankovic/Desktop/Blog_website/static/image2.jpeg');
+        background-size: cover;
+        width: 90%;
+        height: auto;
+       
+    }
+    .container{
+        display:grid;
+        margin:auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+        "hd"
+        "main"
+        "ft";
+        grid-gap:2px;
+        border: 2px solid pink;
+        width: 99%;
+        height:auto;
+        overflow-x: hidden;
+        
+        
+    }
+    img{
+        border-radius: 50%;
+        height: 80%;
+        width:80%;
+        padding: 20px;
+        
+    }
+}
